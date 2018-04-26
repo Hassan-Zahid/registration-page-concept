@@ -1,0 +1,357 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+html, body {
+	margin:0px;
+	padding:0px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+button{
+	border: 0px;
+	outline: 0px;
+}
+input {
+	outline: 0px;
+	border: 1px solid #cccccc;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: Tiempo;
+  font-weight: bold;
+  src:	url('../fonts/tiempo-bold.eot');
+  src:	url('../fonts/tiempo-bold.eot?#iefix') format('embedded-opentype'),
+  		url('../fonts/tiempo-bold.woff2') format('woff2'),
+  		url('../fonts/tiempo-bold.woff') format('woff'),
+  		url('../fonts/tiempo-bold.ttf')  format('truetype'),
+  		url('../fonts/tiempo-bold#svgFontName') format('svg');
+}
+@font-face {
+  font-family: Proxima-Nova;
+  font-weight: normal;
+  src:	url('../fonts/proxima-nova.eot');
+  src:	url('../fonts/proxima-nova.eot?#iefix') format('embedded-opentype'),
+  		url('../fonts/proxima-nova.woff2') format('woff2'),
+  		url('../fonts/proxima-nova.woff') format('woff'),
+  		url('../fonts/proxima-nova.ttf')  format('truetype'),
+  		url('../fonts/proxima-nova#svgFontName') format('svg');
+}
+@font-face {
+  font-family: Proxima-Nova;
+  font-weight: bold;
+  src:	url('../fonts/proxima-nova-semi-bold.eot');
+  src:	url('../fonts/proxima-nova-semi-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/proxima-nova-semi-bold.woff2') format('woff2'),
+		url('../fonts/proxima-nova-semi-bold.woff') format('woff'),
+		url('../fonts/proxima-nova-semi-bold.ttf')  format('truetype'),
+		url('../fonts/proxima-nova-semi-bold#svgFontName') format('svg');
+}
+
+/*Page specific styling*/
+body{
+	font-family: Proxima-Nova;
+	font-weight: normal;
+}
+h1,h2 {
+	font-family: Tiempo;
+	font-weight: bold; 
+	margin: 0px;
+}
+h1 {
+	color: #FFFFFF;
+	font-size: 4rem;
+}
+h2 {
+	color: #333333 ;
+	font-size: 2.5rem;
+}
+
+.center{ 
+	margin: auto;
+	display: block;
+}
+.primary-button{
+	padding: 1rem 4.5rem;
+	border-radius: 50px;
+	background: linear-gradient(226deg, #F34E8B 0%, #FFEA01 100%);
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	-webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+.primary-button:hover{
+
+	background: linear-gradient(226deg, #FFEA01 0%,#F34E8B 100%);
+}
+
+.creative-container {
+	height:730px;
+	width:100%;
+	box-sizing: border-box;
+	background: linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	background: -moz-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	background: -webkit-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	overflow: hidden;
+}
+.main-container {
+	position: relative;
+	height:100%;
+	width: 100%;
+	padding: 0px 60px;
+}
+
+/*content container specifics*/
+
+.main-container .col-md-12{
+}
+.main-container .content-container{
+	display: none;
+}
+
+.main-container .content-container h1{
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.main-container .content-container p{
+	color: #FADCE8;
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.main-container .content-container a{
+	font-weight: bold;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+
+/*laptop container section*/
+.main-container .col-md-12{
+	padding:0px;
+}
+.main-container .laptop-container{
+	height: 450px;
+	position: absolute;
+	padding: 20px;
+	width:100%;
+	background-image: url("../img/ipad.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 1000px;
+}
+
+.main-container .laptop-container .sign-in-content{
+	width: 100%;
+	padding: 35px 0px;
+}
+.main-container .laptop-container .sign-in-content.sign-in-form {
+	padding:60px 0px;
+}
+.main-container .laptop-container .sign-in-content.sign-in-form form {
+	padding: 30px 0px;
+}
+
+.main-container .laptop-container .sign-in-content.sign-in-form .primary-button {
+	margin-top: 3rem;
+}
+.main-container .laptop-container .sign-in-content .login-channels{
+	margin: auto;
+	text-align: center;
+	margin-top: 10px;
+}
+.main-container .laptop-container .sign-in-content .login-channels p,.main-container .laptop-container .sign-in-content .login-channels img{
+	display: inline;
+	font-size: 13px;
+}
+
+.main-container .laptop-container .sign-in-content .login-channels a {
+	color: #FF3B30;
+	background: linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	background: -moz-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	background: -webkit-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	font-size: 13px;
+}
+.main-container .laptop-container .sign-in-content .login-channels img:hover{
+	margin: 0px 10px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.main-container .laptop-container .sign-in-content .form{
+	max-width: 400px;
+	margin: 10px auto;
+	background: #FFFFFF;
+	border-radius: 7px;
+	overflow: hidden;
+	border:1px solid #EBEBEB;
+}
+
+.main-container .laptop-container .sign-in-content .form .field {
+	position: relative;
+	height: 45px;
+}
+.main-container .laptop-container .sign-in-content .form .field label{
+	position: absolute; 
+	left:10px;
+	top:0px;
+	bottom: 0px;
+	margin: auto;
+	padding:12px ;
+	color: #767678;
+}
+
+.main-container .laptop-container .sign-in-content .form input{
+	width: 100%;
+	margin-top:-1px;
+	height: 45px;
+	padding: 10px 20px 10px 175px;
+	border-right: none;
+	border-left: none;
+	border-color: #EBEBEB;
+	color: #333;
+	font-weight: bold;
+}
+
+.main-container .laptop-container .sign-in-content .form input:first-child{
+	border-top: none;
+}
+
+.main-container .laptop-container .sign-in-content .form input:last-child{
+	border-bottom: none;
+}
+.main-container .laptop-container .sign-in-content h3{
+	width: 100%;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 1.5rem;
+	color: #333333;
+}
+
+.main-container .laptop-container .sign-in-content h3 span{
+	/*color: #FFC83D;*/
+	background: linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	background: -moz-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	background: -webkit-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+/*Navbar*/
+nav{
+	padding:10px 60px;
+}
+nav.navbar{
+	margin-bottom: 10px;
+}
+nav .navbar-brand{
+	font-family: Tiempo;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 4rem;
+}
+nav .navbar-collapse ul{
+	list-style: none;
+	padding:16px 0px;
+	margin: 0px !important;
+}
+nav .navbar-collapse ul li{
+	margin-left:15px;
+	float: left !important;
+
+}
+nav .navbar-collapse ul li a{
+	color: #FFFFFF;
+}
+/*footer*/
+footer {
+	color: #D2DDE6;
+
+}
+footer h6{
+	color: #8E9BA5;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+footer .footer-section-1 {
+	background: #0A2032;
+}
+
+footer .footer-section-2 {
+	background: #0D283F;
+	padding: 30px 60px;
+}
+
+footer .footer-section-2 a{
+	color: #D2DDE6;	
+}
+
+footer .footer-section-3 {
+	background: #0A2032;
+	padding: 10px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 700px){
+    .sign-in-content h3{display: none;}
+    nav{padding:10px 30px;}
+    .main-container{padding:0px 30px;}
+}
+
+@media only screen and (max-width: 570px) {
+	.main-container .laptop-container {background-image:none;}
+	.main-container .laptop-container .sign-in-content .login-channels a{
+		text-decoration: underline;
+		background: #FFFFFF;
+		background: #FFFFFF;
+		background: #FFFFFF;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 454px) {
+	.main-container .laptop-container .sign-in-content .form .field label{
+		display: none;
+	}
+	.main-container .laptop-container .sign-in-content .form .field input{
+		padding: 10px 20px; 
+	}
+}
+
+
+@media only screen and (max-width: 380px) {
+	.sign-in-content h3{display: block;line-height: 1.5;}
+	.main-container .laptop-container {
+		background-image: url("../img/iphone.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		min-height: 450px;
+		height: auto;	
+	}
+	.main-container .laptop-container .sign-in-content, .main-container .laptop-container .sign-in-content.sign-in-form {
+		padding: 40px 29px;
+	}
+	.main-container .laptop-container .sign-in-content .login-channels a{
+		background: linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+		background: -moz-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+		background: -webkit-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
