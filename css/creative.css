@@ -103,6 +103,9 @@ h2 {
 	height:100%;
 	width: 100%;
 	padding: 0px 60px;
+	background: url('../img/web-main-background1.png');
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 /*content container specifics*/
