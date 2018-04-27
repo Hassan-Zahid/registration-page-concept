@@ -309,21 +309,30 @@ footer .footer-section-3 {
 
 /*media queries*/
 @media only screen and (max-width: 700px){
-    .sign-in-content h3{display: none;}
     nav{padding:10px 30px;}
     .main-container{padding:0px 30px;}
 }
 
 @media only screen and (max-width: 570px) {
-	.main-container .laptop-container {background-image:none;}
+	.main-container .laptop-container {
+		background-image: url("../img/iphone.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		min-height: 500px;
+		height: auto;	
+	}
+
+	.main-container .laptop-container .sign-in-content, .main-container .laptop-container .sign-in-content.sign-in-form {
+		padding: 80px 29px;
+	}
+
 	.main-container .laptop-container .sign-in-content .login-channels a{
-		text-decoration: underline;
-		background: #FFFFFF;
-		background: #FFFFFF;
-		background: #FFFFFF;
+		background: linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+		background: -moz-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
+		background: -webkit-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		cursor: pointer;
 	}
 }
 
@@ -339,22 +348,9 @@ footer .footer-section-3 {
 
 @media only screen and (max-width: 380px) {
 	.sign-in-content h3{display: block;line-height: 1.5;}
-	.main-container .laptop-container {
-		background-image: url("../img/iphone.png");
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: top center;
-		min-height: 500px;
-		height: auto;	
-	}
+	
 	.main-container .laptop-container .sign-in-content, .main-container .laptop-container .sign-in-content.sign-in-form {
 		padding: 40px 29px;
 	}
-	.main-container .laptop-container .sign-in-content .login-channels a{
-		background: linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
-		background: -moz-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
-		background: -webkit-linear-gradient(226deg, #CE287E 0%, #FF3B30 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+	
 }
